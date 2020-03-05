@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .contenedor {
+    /* haceel contenedor flexible */
+    display: flex;
+    /* separa y deja un espacio en la mitad */
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    /* linear sirve para combinal dos colores de forma lineal  */
+    background: linear-gradient(rgba(78, 76, 73, 0.801), rgba(189, 189, 189, .8)), url(../img/Robotic-welding-sparks_2560x1440.jpg);
+    /* 100% del alto dela ventana */
+    height: 100vh;
+    /* adaptar la imagen al tamaño de la ventana */
+    background-size: cover;
+}
+
+#contenedor-titulo-flex {
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor-titulo {
+    text-align: center;
+}
+
+.boton {
+    font-size: 14px;
+    color: #fff;
+    background: #5cb8ff;
+    padding: 14px 24px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+p.logo {
+    color: #fff;
+    font-size: 40px;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+
+/* SECCION SOBRE NOSOTROS */
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+.img {
+    width: 668px;
+    height: 100%;
+}
+
+.contenedor-sobreNosotros {
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto {
+    width: 42%;
+}
+
+
+/* SECCION SERVICIOS */
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+}
+
+.servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.servicio h4 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p {
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicios .oscuro {
+    background: linear-gradient(0deg, rgba(192, 192, 192, 0.699) 0%, rgb(185, 182, 179) 100%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contenedor-servicios .claro {
+    background: linear-gradient(0deg, rgba(1, 10, 10, 1) 0%, rgba(246, 243, 235, 1) 56%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.carrou {
+    width: 668px;
+    height: 100%;
+}
+
+
+/* SECCION TRABAJA CON NOSOTROS */
+
+.contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#porque .item {
+    width: 28%;
+    text-align: center;
+}
+
+#porque ul li {
+    list-style: none;
+}
+
+#porque ul li:nth-child(1) {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#porque ul li:nth-child(2) {
+    line-height: 31pxS;
+}
+
+
+/* SECCION CONTACTO */
+
+#contacto form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+}
+
+textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#contacto input[type="submit"] {
+    margin: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+
+/* SECCION REDES */
+
+footer {
+    background: #2f2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#sobreNosotros,
+#servicios,
+#trabajos,
+#porque,
+#contacto {
+    padding: 70px 0;
+}
